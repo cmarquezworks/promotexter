@@ -24,6 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="utilities.css">
 	<link rel="stylesheet" href="style.css">
 
@@ -47,7 +48,13 @@
 					</div>
 					<div class="mb-3">
 					<label for="password" class="form-label">Password</label>
-					<input type="password" class="form-control" id="password" name="password" required minlength="6">
+					<div class="input-group">
+						<input type="password" class="form-control" id="password" name="password" required minlength="6">
+						<button type="button" class="btn btn-outline-secondary" id="togglePassword" style="width: 46px;">
+							<i class="fas fa-eye"></i>
+						</button>
+					</div>
+					<!-- <input type="password" class="form-control" id="password" name="password" required minlength="6"> -->
 					<span class="text-danger" id="passwordError">Password must be at least 6 characters long.</span>
 					</div>
 					<div class="row w-100 gx-0 mb-4">
@@ -65,8 +72,6 @@
 					<div class="text-center">
 						<span class="text-muted">Don't have an account yet? </span><a href="signup.html">Sign Up</a>
 					</div>
-					
-					
 				</form>
 			</div>
 
@@ -148,6 +153,26 @@
 			}
 		});
 	});
+
+	document.addEventListener("DOMContentLoaded", function () {
+    const password = document.getElementById("password");
+    const togglePassword = document.getElementById("togglePassword");
+    const passwordIcon = togglePassword.querySelector("i");
+
+    // Toggle password visibility on icon click
+    togglePassword.addEventListener("click", function () {
+      // Check if password is currently visible or hidden
+      if (password.type === "password") {
+        password.type = "text";
+        passwordIcon.classList.remove("fa-eye");
+        passwordIcon.classList.add("fa-eye-slash"); // Change icon to "eye-slash"
+      } else {
+        password.type = "password";
+        passwordIcon.classList.remove("fa-eye-slash");
+        passwordIcon.classList.add("fa-eye"); // Change icon back to "eye"
+      }
+    });
+  });
   </script>
 
 
