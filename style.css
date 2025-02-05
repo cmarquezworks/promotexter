@@ -55,3 +55,7 @@ p {
 }
 
 .error-message { color: red; font-size: 0.9em; display: none; }
+
+.btn-outline-secondary {
+  border-color: #dee2e6;
+}
