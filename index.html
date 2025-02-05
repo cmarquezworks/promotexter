@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Blast | Boost your sales with branded | Bulk SMS | Promotexter</title>
+	<meta name="description" content="Promotexter’s cloud-based bulk SMS and Text Blast service gives you reliable delivery worldwide,straight from your browser.">
+	<link rel="canonical" href="https://promotexter.com/bulk-sms-text-blast/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Text Blast | Boost your sales with branded | Bulk SMS | Promotexter">
+	<meta property="og:description" content="Promotexter’s cloud-based bulk SMS and Text Blast service gives you reliable delivery worldwide,straight from your browser.">
+	<meta property="og:url" content="https://promotexter.com/bulk-sms-text-blast/">
+	<meta property="og:site_name" content="Promotexter">
+	<meta property="article:publisher" content="https://www.facebook.com/promotexter">
+	<meta property="article:modified_time" content="2024-02-01T06:32:15+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="https://promotexter.com/wp-content/uploads/2020/08/13e7e237.favicon.png" sizes="32x32">
+	<link rel="icon" href="https://promotexter.com/wp-content/uploads/2020/08/13e7e237.favicon.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="https://promotexter.com/wp-content/uploads/2020/08/13e7e237.favicon.png">
+	<meta name="msapplication-TileImage" content="https://promotexter.com/wp-content/uploads/2020/08/13e7e237.favicon.png">
+	<link rel="stylesheet" href="reset.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="utilities.css">
+	<link rel="stylesheet" href="style.css">
+
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container py-5 h-100">
+    <div class="row h-100 w-100">
+      <div class="col-lg-6 py-4 px-5 position-relative">
+		<div class="d-flex justify-content-between align-items-start flex-column h-100">
+			<img src="./images/logo-dark.webp" width="200" class="img-fluid mb-4" alt="Promotexter Logo">
+			<div class="w-100">
+				<p class="fs-2 text-primary fw-semibold mb-4">Login</p>
+				<p class="fs-5 fw-semibold lh-1">Access your account</p>
+				<p class="lh-sm">Send powerful SMS campaigns in seconds. Reach customers instantly and grow your business effortlessly.</p>
+				<form id="loginForm" class="w-100" novalidate>
+					<div class="mb-3">
+					<label for="email" class="form-label">Email address</label>
+					<input type="email" class="form-control is-invalid" id="email" name="email" required autofocus>
+					<span class="text-danger" id="emailError">Please enter a valid email address.</span>
+					</div>
+					<div class="mb-3">
+					<label for="password" class="form-label">Password</label>
+					<input type="password" class="form-control" id="password" name="password" required minlength="6">
+					<span class="text-danger" id="passwordError">Password must be at least 6 characters long.</span>
+					</div>
+					<div class="row w-100 gx-0 mb-4">
+						<div class="col">
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="rememberMe">
+								<label class="form-check-label" for="rememberMe">Remember me</label>
+							</div>
+						</div>
+						<div class="col-auto">
+							<a href="forgot-password.html">Forgot Password?</a>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-lg btn-primary w-100 mb-4">Log In</button>
+					<div class="text-center">
+						<span class="text-muted">Don't have an account yet? </span><a href="signup.html">Sign Up</a>
+					</div>
+					
+					
+				</form>
+			</div>
+
+			<p class="text-center w-100 text-muted fs-6 mt-4">©2025 Promotexter. All rights reserved.</p>
+		</div>
+	  </div>
+
+       <div class="d-none d-lg-block col-lg-6 login">
+		<div class="h-100 rounded-4 position-relative p-4" style="background: url('./images/login.webp') no-repeat top;background-size:cover; ">
+			<div class="login__cta d-flex gap-2 flex-column align-items-start">
+				<p class="fs-2 fw-bold text-primary text-wrap lh-sm">Boost Sales with Branded Bulk SMS Campaigns</p>
+				<p class="fs-4 text-wrap mb-4">Send fast, reliable text campaigns worldwide—straight from your browser. No downloads needed.</p>
+				<a class="btn  btn-lg btn-success" href="signup.html">Send SMS Now</a>
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const email = document.getElementById("email");
+		const password = document.getElementById("password");
+		const emailError = document.getElementById("emailError");
+		const passwordError = document.getElementById("passwordError");
+		const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+		// Hide errors on page load
+		emailError.style.display = "none";
+		passwordError.style.display = "none";
+		email.classList.remove("is-invalid");
+		password.classList.remove("is-invalid");
+
+		// Validate email on blur (when the user leaves the field)
+		email.addEventListener("blur", function () {
+			if (email.value.trim() !== "" && !emailPattern.test(email.value.trim())) {
+				emailError.style.display = "block";
+				email.classList.add("is-invalid");
+			}
+		});
+
+		// Remove error when user starts typing
+		email.addEventListener("input", function () {
+			emailError.style.display = "none";
+			email.classList.remove("is-invalid");
+		});
+
+		// Validate password on blur
+		password.addEventListener("blur", function () {
+			if (password.value !== "" && password.value.length < 6) {
+				passwordError.style.display = "block";
+				password.classList.add("is-invalid");
+			}
+		});
+
+		// Remove error when user starts typing
+		password.addEventListener("input", function () {
+			passwordError.style.display = "none";
+			password.classList.remove("is-invalid");
+		});
+
+		// Form validation on submit
+		document.getElementById("loginForm").addEventListener("submit", function (event) {
+			let valid = true;
+
+			if (!emailPattern.test(email.value.trim())) {
+				emailError.style.display = "block";
+				email.classList.add("is-invalid");
+				valid = false;
+			}
+
+			if (password.value.length < 6) {
+				passwordError.style.display = "block";
+				password.classList.add("is-invalid");
+				valid = false;
+			}
+
+			if (!valid) {
+				event.preventDefault();
+			}
+		});
+	});
+  </script>
+
+
+</body>
+</html>
