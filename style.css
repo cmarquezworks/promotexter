@@ -54,8 +54,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.error-message { color: red; font-size: 0.9em; display: none; }
+.error-message { 
+  color: red; 
+  font-size: 12px; 
+  display: none; 
+}
 
 .btn-outline-secondary {
   border-color: #dee2e6;
+}
+
+input::placeholder {
+  color: #c1c1c1 !important; 
 }
