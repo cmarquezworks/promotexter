@@ -150,6 +150,9 @@
 
 			if (!valid) {
 				event.preventDefault();
+			} else {
+				event.preventDefault(); 
+				window.location.href = "profile.html"; 
 			}
 		});
 	});
@@ -161,15 +164,14 @@
 
     // Toggle password visibility on icon click
     togglePassword.addEventListener("click", function () {
-      // Check if password is currently visible or hidden
       if (password.type === "password") {
         password.type = "text";
         passwordIcon.classList.remove("fa-eye");
-        passwordIcon.classList.add("fa-eye-slash"); // Change icon to "eye-slash"
+        passwordIcon.classList.add("fa-eye-slash"); 
       } else {
         password.type = "password";
         passwordIcon.classList.remove("fa-eye-slash");
-        passwordIcon.classList.add("fa-eye"); // Change icon back to "eye"
+        passwordIcon.classList.add("fa-eye"); 
       }
     });
   });

@@ -208,6 +208,9 @@
           confirmPassword.classList.contains("is-invalid")
         ) {
           event.preventDefault();
+        } else {
+          event.preventDefault(); 
+          window.location.href = "profile.html"; 
         }
       });
     });
